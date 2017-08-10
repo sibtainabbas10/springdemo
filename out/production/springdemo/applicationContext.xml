@@ -9,7 +9,12 @@
         </bean>
 
         <bean id="myCoach" class="com.sib.springdemo.TrackCoach">
-                <!-- setup constructor injection -->
-                <constructor-arg ref="myFortune"></constructor-arg>
+            <!-- setup constructor injection -->
+            <constructor-arg ref="myFortune"></constructor-arg>
+        </bean>
+
+        <bean id="myCricketCoach" class="com.sib.springdemo.CricketCoach">
+            <!-- setup our setter injection -->
+            <property name="fortuneService" ref="myFortune"></property>
         </bean>
 </beans>
