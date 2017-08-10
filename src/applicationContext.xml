@@ -8,7 +8,7 @@
         <bean id="myFortune" class="com.sib.springdemo.HappyFortuneService">
         </bean>
 
-        <bean id="myCoach" class="com.sib.springdemo.BaseballCoach">
+        <bean id="myCoach" class="com.sib.springdemo.TrackCoach">
                 <!-- setup constructor injection -->
                 <constructor-arg ref="myFortune"></constructor-arg>
         </bean>
