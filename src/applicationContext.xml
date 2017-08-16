@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-        <!-- Define beans here -->
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+        <!-- load the properties file: sport.properties -->
+        <context:property-placeholder location="classpath:sport.properties"/>
+
+         <!-- Define beans here -->
 
         <!-- Define the dependency -->
         <bean id="myFortune" class="com.sib.springdemo.HappyFortuneService">
@@ -10,11 +18,23 @@
 
         <bean id="myCoach" class="com.sib.springdemo.TrackCoach">
             <!-- setup constructor injection -->
+
+            <!-- will call the parameterized contructor TrackCoach(..) and inject 'myFortune' object/dependency -->
             <constructor-arg ref="myFortune"></constructor-arg>
         </bean>
 
         <bean id="myCricketCoach" class="com.sib.springdemo.CricketCoach">
-            <!-- setup our setter injection -->
+                <!-- setup our setter injection -->
+
+            <!-- will call the setFortuneService(...) and inject 'myFortune' object/dependency -->
             <property name="fortuneService" ref="myFortune"></property>
+
+                <!-- inject literal values -->
+
+            <!-- will call setEmailAddress(..) and inject the literal value -->
+            <property name="emailAddress" value="${email}"></property>
+
+            <!-- will call setTeam(..) and inject the literal value  -->
+            <property name="team" value="${team}"></property>
         </bean>
 </beans>
