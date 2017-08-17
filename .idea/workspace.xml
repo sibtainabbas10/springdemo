@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f61f9f2-636f-4502-b58e-29637140502d" name="Default" comment="dependency injection - setter injection">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sport.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/springdemo/com/sib/springdemo/CricketCoach.class" afterPath="$PROJECT_DIR$/out/production/springdemo/com/sib/springdemo/CricketCoach.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/springdemo/com/sib/springdemo/SetterDemoApp.class" afterPath="$PROJECT_DIR$/out/production/springdemo/com/sib/springdemo/SetterDemoApp.class" />
+    <list default="true" id="4f61f9f2-636f-4502-b58e-29637140502d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/springdemo/applicationContext.xml" afterPath="$PROJECT_DIR$/out/production/springdemo/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/applicationContext.xml" afterPath="$PROJECT_DIR$/src/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sib/springdemo/CricketCoach.java" afterPath="$PROJECT_DIR$/src/com/sib/springdemo/CricketCoach.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sib/springdemo/SetterDemoApp.java" afterPath="$PROJECT_DIR$/src/com/sib/springdemo/SetterDemoApp.java" />
     </list>
     <ignored path="springdemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -575,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1502389368601</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- literal values injection using properties file">
+      <created>1502888419020</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1502888419020</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -659,7 +659,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="xml dependency injection - contructor complete" />
     <MESSAGE value="dependency injection - setter injection" />
-    <option name="LAST_COMMIT_MESSAGE" value="dependency injection - setter injection" />
+    <MESSAGE value="- literal values injection using properties file" />
+    <option name="LAST_COMMIT_MESSAGE" value="- literal values injection using properties file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
